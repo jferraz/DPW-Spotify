@@ -79,3 +79,11 @@ ul {
 .main {
   flex: 1;
 }
+
+.menu_item_img{
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  color: #fff;
+  
+}
