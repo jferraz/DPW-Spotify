@@ -1,0 +1,45 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #65D36E;
+}
+
+#text{
+    font-weight: 600;
+}
+
+#form{
+    background-color: aliceblue;
+}
+
+#button{
+    height: 40px;
+    width: 400px;
+    font-size: 15px;
+    border-radius: 25px;
+    border: 1px solid
+}
+
+#ou{
+    font-weight: 200;
+}
+
+.linha{
+    flex: 1;
+    height: 1px;
+    color: #000;
+}
+
+.form-control {
+    height: 40px;
+    width: 400px;
+    font-size: 15px;
+
+}
