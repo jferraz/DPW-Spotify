@@ -42,3 +42,10 @@ body{
     width: 400px;
     font-size: 15px;
 }
+
+#esqueci {
+    padding-right: 240px;
+    color: rgb(88, 85, 85);
+    font-size: 15px;
+    font-weight: 200;
+}
