@@ -5,6 +5,7 @@
 }
 
 body{
+  padding: 15px;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
@@ -16,7 +17,9 @@ body{
 }
 
 #form{
+    border: 5px solid;
     background-color: aliceblue;
+    border-radius: 10px;
 }
 
 #button{
@@ -37,6 +40,10 @@ body{
     color: #000;
 }
 
+#label_form {
+    font-size: 15px;
+}
+
 .form-control {
     height: 40px;
     width: 400px;
@@ -49,3 +56,23 @@ body{
     font-size: 15px;
     font-weight: 200;
 }
+
+.form-check {
+    padding-right: 100px;
+    color: rgb(88, 85, 85);
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#submit{
+    height: 40px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    background-color: #65D36E;
+}
+
+  
