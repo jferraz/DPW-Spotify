@@ -78,3 +78,31 @@ body{
 footer {
     font-weight: 400;
 } 
+
+.or-text {
+    margin: 22px auto;
+    max-width: 85%;
+    text-align: center;
+    font-weight: 200;
+    display: block;
+    position: relative;
+  }
+  
+  .or-text::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 42%;
+    border-top: 1px solid var(--gray-300);
+    top: 13px;
+  }
+  
+  .or-text::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 42%;
+    border-top: 1px solid var(--gray-300);
+    top: 13px;
+    right: 0;
+  }
