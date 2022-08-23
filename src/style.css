@@ -4,11 +4,17 @@
   --gray-200: #b3b3b3;
   --gray-300: #a7a7a7;
   --gray-400: #242424;
-  --gray-800: #1e1e1e;
-  --gray-500: #181818;
+  --gray-500: #1e1e1e;
+  --gray-600: #181818;
   --gray-700: #121212;
-  --gray-600: #101010;
+  --gray-800: #101010;
   --gray-900: #000000;
+
+  --green-700: #1ed760;
+  --green-800: #1db954;
+  --green-900: #169b45;
+
+  --blue-900: #405a93;
 
   /* typography */
   --text-xs: 12px;
@@ -211,7 +217,7 @@ a {
 }
 
 .primary-link--fb {
-  background-color: #405a93;
+  background-color: var(--blue-900);
   color: var(--gray-100);
 }
 
@@ -315,7 +321,7 @@ a {
 }
 
 .or-text {
-  margin: 32px auto;
+  margin: 22px auto;
   max-width: 85%;
   text-align: center;
   display: block;
@@ -339,4 +345,108 @@ a {
   border-top: 1px solid var(--gray-300);
   top: 13px;
   right: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.field--row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.field__container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.field__container > .field {
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.field__label {
+  color: var(--gray-900);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+.field--row > .field__label {
+  margin-bottom: 0;
+}
+
+.field__label--light {
+  font-weight: normal;
+}
+
+.field__input {
+  border-radius: 4px;
+  padding: 14px;
+  font-size: var(--text-base);
+  border: none;
+  box-shadow: inset 0 0 0 1px var(--gray-300);
+  color: var(--gray-900);
+}
+
+.field--row > .field__label {
+  padding: 0 0 0 12px;
+}
+
+.field__input[type='radio'] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--gray-300);
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field__input[type='radio']:checked {
+  box-shadow: inset 0 0 0 4px var(--green-900);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 1.25;
+}
+
+.flex-3 {
+  flex: 2.25;
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.primary-btn {
+  padding: 16px 48px;
+  background-color: var(--green-700);
+  font-size: var(--text-base);
+  color: var(--gray-900);
+  font-weight: 700;
+  border: none;
+  border-radius: 500px;
+  margin: 0 auto;
+}
+
+.signup-footer {
+  padding: 24px 0 40px 0;
+  color: var(--gray-900);
+  display: flex;
+  justify-content: center;
+}
+
+.signup-footer a {
+  color: var(--green-800);
+  text-decoration: underline;
 }
