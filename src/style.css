@@ -450,3 +450,28 @@ a {
   color: var(--green-800);
   text-decoration: underline;
 }
+
+tr {
+  gap: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+td {
+  display: inline-block;
+  display: flex;
+  width: 100%;
+}
+tbody {
+  gap: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.playlist {
+  background-color: #1e1e1e;
+  display: flex;
+  width: 100%;
+  flex: 1;
+  align-items: center;
+}
