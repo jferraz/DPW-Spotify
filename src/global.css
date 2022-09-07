@@ -1,0 +1,94 @@
+:root {
+  /* colors */
+  --gray-100: #fff;
+  --gray-400: #b3b3b3;
+  --gray-500: #a7a7a7;
+  --gray-900: #242424;
+
+  --black-700: #1e1e1e;
+  --black-750: #181818;
+  --black-800: #121212;
+  --black-850: #101010;
+  --black-900: #000000;
+
+  --green-500: #1ed760;
+  --green-600: #1db954;
+  --green-800: #169b45;
+
+  /* typography */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.5rem;
+  --text-xl: 2rem;
+
+  /* tokens */
+  --background-light: var(--gray-100);
+  --background-dark: var(--black-900);
+  --background-gradient-dark: linear-gradient(
+    180deg,
+    var(--gray-900) 0%,
+    var(--black-800) 30%
+  );
+  --background-header: rgba(0, 0, 0, 0.5);
+  --background-card: var(--black-750);
+
+  --text-default: var(--gray-500);
+  --text-light: var(--gray-100);
+  --text-dark: var(--black-900);
+
+  --link-primary: var(--green-600);
+
+  --btn-primary-background: var(--green-500);
+  --btn-secondary-background: var(--gray-100);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--text-base);
+  font-weight: normal;
+  color: var(--gray-500);
+}
+
+input,
+button,
+textarea,
+a {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--gray-500);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: inherit;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,160 @@
+.signup-wrapper {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.header-container {
+  padding: 40px 0 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-container__title {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-top: 40px;
+  line-height: 36px;
+  letter-spacing: -0.04em;
+}
+
+.signup-options {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  max-width: 394px;
+  margin: 0 auto;
+}
+
+.or-text {
+  margin: 22px auto;
+  max-width: 85%;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+.or-text::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 42%;
+  border-top: 0.5px solid var(--gray-500);
+  top: 13px;
+}
+
+.or-text::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 42%;
+  border-top: 1px solid var(--gray-500);
+  top: 13px;
+  right: 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.field--row {
+  flex-direction: row;
+  align-items: center;
+}
+
+.field__container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.field__container > .field {
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.field__label {
+  color: var(--text-dark);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  margin-bottom: 8px;
+  line-height: 20px;
+}
+
+.field--row > .field__label {
+  margin-bottom: 0;
+}
+
+.field__label--light {
+  font-weight: normal;
+}
+
+.field__input {
+  border-radius: 4px;
+  padding: 14px;
+  font-size: var(--text-base);
+  border: none;
+  box-shadow: inset 0 0 0 1px var(--gray-500);
+  color: var(--text-dark);
+}
+
+.field--row > .field__label {
+  padding: 0 0 0 12px;
+}
+
+.field__input[type='radio'] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--gray-500);
+  appearance: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field__input[type='radio']:checked {
+  box-shadow: inset 0 0 0 4px var(--green-800);
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 1.25;
+}
+
+.flex-3 {
+  flex: 2.25;
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.primary-btn {
+  padding: 16px 48px;
+  background-color: var(--btn-primary-background);
+  font-size: var(--text-base);
+  color: var(--text-dark);
+  font-weight: 700;
+  border: none;
+  border-radius: 500px;
+  margin: 0 auto;
+}
+
+.signup-footer {
+  padding: 24px 0 40px 0;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+}
+
+.signup-footer a {
+  color: var(--link-primary);
+  text-decoration: underline;
+}

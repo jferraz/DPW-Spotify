@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+import { Link } from 'react-router-dom'
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
+import { SpotifyLogo } from '../../components/SpotifyLogo/SpotifyLogo'
 
-    <title>Sign up - Spotify</title>
-  </head>
-  <body>
+import './SignUp.styles.css'
+
+export function SignUp() {
+  return (
     <div class="signup-wrapper">
       <header class="header-container">
-        <a href="./index.html">
-          <img
-            src="./assets/Spotify_Logo_CMYK_Black.png"
-            height="40px"
-            alt="Spotify Logo"
-          />
-        </a>
+        <Link to="/">
+          <SpotifyLogo variant="secondary" />
+        </Link>
         <h1 class="header-container__title">
           Sign up for free to start listening.
         </h1>
@@ -41,7 +27,9 @@
         <span class="or-text">or</span>
         <form action="./index.html" class="signup-form">
           <div class="field">
-            <label for="email" class="field__label">What's your email?</label>
+            <label for="email" class="field__label">
+              What's your email?
+            </label>
             <input
               type="email"
               name="email"
@@ -51,9 +39,9 @@
             />
           </div>
           <div class="field">
-            <label for="email_confirmation" class="field__label"
-              >Confirm your email</label
-            >
+            <label for="email_confirmation" class="field__label">
+              Confirm your email
+            </label>
             <input
               type="email"
               name="email_confirmation"
@@ -63,7 +51,9 @@
             />
           </div>
           <div class="field">
-            <label for="password" class="field__label">Create a password</label>
+            <label for="password" class="field__label">
+              Create a password
+            </label>
             <input
               type="password"
               name="password"
@@ -73,9 +63,9 @@
             />
           </div>
           <div class="field">
-            <label for="name" class="field__label"
-              >What should we call you?</label
-            >
+            <label for="name" class="field__label">
+              What should we call you?
+            </label>
             <input
               type="text"
               name="name"
@@ -88,9 +78,9 @@
             <label class="field__label">What's your date of birth?</label>
             <div class="field__container">
               <div class="field flex-1">
-                <label for="day" class="field__label field__label--light"
-                  >Day</label
-                >
+                <label for="day" class="field__label field__label--light">
+                  Day
+                </label>
                 <input
                   type="number"
                   name="day"
@@ -100,11 +90,13 @@
                 />
               </div>
               <div class="field flex-3">
-                <label for="month" class="field__label field__label--light"
-                  >Month</label
-                >
+                <label for="month" class="field__label field__label--light">
+                  Month
+                </label>
                 <select name="month" id="month" class="field__input">
-                  <option selected disabled value="">Month</option>
+                  <option selected disabled value="">
+                    Month
+                  </option>
                   <option value="1">January</option>
                   <option value="2">February</option>
                   <option value="3">March</option>
@@ -120,9 +112,9 @@
                 </select>
               </div>
               <div class="field flex-2">
-                <label for="year" class="field__label field__label--light"
-                  >Year</label
-                >
+                <label for="year" class="field__label field__label--light">
+                  Year
+                </label>
                 <input
                   type="number"
                   name="year"
@@ -147,8 +139,9 @@
                 <label
                   for="gender-male"
                   class="field__label field__label--light"
-                  >Male</label
                 >
+                  Male
+                </label>
               </div>
               <div class="field field--row">
                 <input
@@ -161,8 +154,9 @@
                 <label
                   for="gender-female"
                   class="field__label field__label--light"
-                  >Female</label
                 >
+                  Female
+                </label>
               </div>
               <div class="field field--row">
                 <input
@@ -172,20 +166,24 @@
                   value="non_binary"
                   class="field__input"
                 />
-                <label for="gender-nb" class="field__label field__label--light"
-                  >Non-binary</label
-                >
+                <label for="gender-nb" class="field__label field__label--light">
+                  Non-binary
+                </label>
               </div>
             </div>
           </div>
           <div class="btn-wrapper">
-            <button type="submit" class="primary-btn">Sign up</button>
+            <button type="submit" class="primary-btn">
+              Sign up
+            </button>
           </div>
         </form>
       </main>
       <footer class="signup-footer">
-        <span>Have an account? <a href="./formulario.html">Log in</a>.</span>
+        <span>
+          Have an account? <Link to="/login">Log in</Link>.
+        </span>
       </footer>
     </div>
-  </body>
-</html>
+  )
+}

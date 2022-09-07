@@ -1,0 +1,13 @@
+.spotify-logo {
+  height: 40px;
+  max-width: 131px;
+  width: 100%;
+}
+
+.spotify-logo--white {
+  color: var(--gray-100);
+}
+
+.spotify-logo--black {
+  color: var(--black-900);
+}
