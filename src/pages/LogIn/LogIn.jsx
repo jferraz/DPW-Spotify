@@ -75,11 +75,9 @@ export function LogIn() {
               Lembrar de mim
             </label>
           </div>
-          <a href="/src/index.html">
-            <button type="submit" class="btn btn-primary" id="submit">
-              Entrar
-            </button>
-          </a>
+          <button type="submit" class="btn btn-primary" id="submit">
+            Entrar
+          </button>
         </div>
 
         <footer class="signup-footer">

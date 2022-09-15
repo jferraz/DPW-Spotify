@@ -22,10 +22,10 @@ export function Home() {
         </div>
         <ul class="menu">
           <li>
-            <a href="#" class="menu-link menu-link--active">
+            <Link to="/" className="menu-link menu-link--active">
               <House size={24} weight="fill" />
               <span>Home</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#" class="menu-link">
@@ -56,9 +56,9 @@ export function Home() {
               <a href="#" class="quick-action-nav__item">
                 Premium
               </a>
-              <a href="#" class="quick-action-nav__item">
+              <Link to="/support" class="quick-action-nav__item">
                 Support
-              </a>
+              </Link>
               <a href="#" class="quick-action-nav__item">
                 Download
               </a>
