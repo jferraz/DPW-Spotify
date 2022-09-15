@@ -10,7 +10,7 @@ export function LogIn() {
       <div class="d-flex flex-column align-items-center" id="text">
         <div class="mb-2">
           <Link to="/">
-            <SpotifyLogo variant="secondary" />
+            <SpotifyLogo dark />
           </Link>
         </div>
 

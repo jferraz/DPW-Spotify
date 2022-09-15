@@ -9,7 +9,7 @@ export function SignUp() {
     <div class="signup-wrapper">
       <header class="header-container">
         <Link to="/">
-          <SpotifyLogo variant="secondary" />
+          <SpotifyLogo dark />
         </Link>
         <h1 class="header-container__title">
           Sign up for free to start listening.
